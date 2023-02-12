@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500&display=swap');
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background: #06172b;
+  
+}
+.about {
+  position: relative;
+  top: 0%;
+  height: 100vh;
+  width: 100vw;
+  background: #06172b;
+  color: #7a571c;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  /* z-index: -1; */
+}
+
+.greeting {
+  position: absolute;
+  right: 0;
+  font-size: 9vw;
+  text-align: right;
+  padding-right: 5%;
+}
+
+.signature {
+  position: absolute;
+  left: 10%;
+  width: 30vw;
+}
+.contacts {
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+.contactslinks {
+  color: #9f7225;
+  transition: 0.7s;
+}
+.contactslinks:hover {
+  margin-left: 15%;
+  scale: 1.2;
+}
+/* ////////////////////////////////////////  animation */
+.lineUp {
+  animation-delay: 20s;
+  animation: 2s anim-lineUp ease-out;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+/* //////////////////////////////////////////animation */
+
+.about2 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile {
+  height: 60%;
+  width: 90%;
+  max-width: 1000px;
+  /* background: #7e4eae; */
+  display: flex;
+  color: #9f7225;
+
+  
+  font-size: 18px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.image {
+  background-image: url("./profile shubham.png");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 40%;
+  min-width: 300px;
+  border-radius: 5%;
+}
+.profiledata {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 20px;
+  font-weight: 400;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* background: rgba( 255, 255, 255, 0.1 ); */
+  
+}
+
+.profiledata > p,
+h1 {
+  /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+  padding: 10%;
+}
+
+@media (max-width: 850px) {
+  .profile {
+    min-height: 200px;
+    height: 70vh;
+    flex-direction: column;
+  }
+
+  .image {
+    background-image: url("./profile shubham.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
+    min-width: 300px;
+    border-radius: 5%;
+  }
+  .profiledata {
+    width: 98%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .profiledata > p,
+  h1 {
+    padding: 2%;
+  }
+}
+
+
+
+
+

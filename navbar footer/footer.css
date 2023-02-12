@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
+.footer {
+  /* background: rgb(31, 75, 7); */
+  padding: 15px 0px;
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  background: rgba( 255, 255, 255, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.footer .row {
+  width: 100%;
+  /* margin:1% 0%; */
+  padding: 0.6% 0%;
+  color: rgb(165, 169, 80);
+  font-size: 2em;
+}
+
+.footer .row .contactsicons {
+  text-decoration: none;
+  color: rgb(165 , 169 , 80);
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row .contactsicons i {
+  font-size: 5em;
+  margin: 0% 1%;
+}
